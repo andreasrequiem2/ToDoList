@@ -2,7 +2,7 @@
 {
     public class category
     {
-        public int IdCategory  { get; set; } 
-        public string NameCategory { get; set; }
+        public int CategoryId { get; set; } 
+        public string? NameCategory { get; set; }
     }
 }

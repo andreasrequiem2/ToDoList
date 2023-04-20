@@ -33,7 +33,7 @@ namespace ToDoList.Controllers
             return View("Index");
         }
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetThings()
         {
             return View("Index");
         }
@@ -47,7 +47,7 @@ namespace ToDoList.Controllers
                     Thing = model.Thing,
                     Due = model.Due,
                     IsDone = model.IsDone,
-                    IdCategory = model.IdCategory
+                    IdCategory = model.CategoryId
                 };
                 _thingRepository.CreateThing(thing);
                 return RedirectToAction("Index");
